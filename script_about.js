@@ -101,11 +101,8 @@ function toggleContent3() {
         contentDiv2.style.display = 'none';
         contentDiv3.style.display = 'none';
         contentDiv4.style.display = 'block';
-        button3.style.backgroundColor = 'lightgray';
-        button3.style.borderColor = 'lightgray';
-        if (element.classList.contains('dark-mode')) {
-          button3.style.color = 'black';
-        }
+        button3.style.backgroundColor = 'rgb(190, 190, 190)';
+        button3.style.borderColor = 'rgb(190, 190, 190)';
     } else {
         // Otherwise, hide it
         contentDiv.style.display = 'none';
@@ -114,7 +111,6 @@ function toggleContent3() {
         contentDiv4.style.display = 'none';
         button3.style.backgroundColor = '';
         button3.style.borderColor = '';
-        button3.style.color = 'white';
     }
 }
 
