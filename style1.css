@@ -6,8 +6,21 @@ body {
 }
 
 .main {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.start p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+}
+
+.start {
+  display: block;
 }
 
 html { 
@@ -94,6 +107,15 @@ button {
   cursor: pointer;
 }
 
+#mem_button {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  border: solid white;
+}
+
 .dynamic-button {
   background-color: white;
   color: black;
@@ -106,21 +128,54 @@ button {
 }
 
 .text {
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+  border-radius: 20px;
   margin: 100px 30px 30px 30px;
   flex: 70%;
-  border: solid 1px;  
+  border: solid white 1px;
   width: 100%;
   z-index: 10;
 } 
 
+.side {
+  width: 30%;
+}
+
+.about {
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+  margin: 100px 30px 30px 30px;
+  border: solid white 1px;  
+  border-radius: 20px;
+  z-index: 10;
+  padding-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+  height: auto;
+} 
+
+.members {
+  box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
+  margin: 50px 30px 30px 30px;
+  border: solid white 1px;  
+  border-radius: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  height: auto;
+} 
+
 .article {
+  display: none;
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   padding-top: 48px;
   padding-left: 64px;
 }
 
 .header {
-  font-size: 42px;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .description {
@@ -686,6 +741,15 @@ body.dark-mode #myBtn {
 
 body.dark-mode .theme-toggle {
   color: white;
+}
+
+body.dark-mode #mem_button {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  border: solid black;
 }
 
 .theme-toggle:hover {
