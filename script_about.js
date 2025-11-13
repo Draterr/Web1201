@@ -100,17 +100,25 @@ function toggleContent3() {
     if (contentDiv.style.display === 'none' || contentDiv.style.display === '') {
         // If it's hidden (or no style set), show it as a block element
         contentDiv.style.display = 'block';
+        contentDiv.style.opacity = 1;
         contentDiv2.style.display = 'none';
+        contentDiv2.style.opacity = 0;
         contentDiv3.style.display = 'none';
+        contentDiv3.style.opacity = 0;
         contentDiv4.style.display = 'block';
+        contentDiv4.style.opacity = 1;
         button3.style.backgroundColor = 'rgb(190, 190, 190)';
         button3.style.borderColor = 'rgb(190, 190, 190)';
     } else {
         // Otherwise, hide it
         contentDiv.style.display = 'none';
+        contentDiv.style.opacity = 0;
         contentDiv2.style.display = 'block';
+        contentDiv2.style.opacity = 1;
         contentDiv3.style.display = 'block';
+        contentDiv3.style.opacity = 1;        
         contentDiv4.style.display = 'none';
+        contentDiv4.style.opacity = 0;
         button3.style.backgroundColor = '';
         button3.style.borderColor = '';
     }
