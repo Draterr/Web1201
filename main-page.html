@@ -18,56 +18,56 @@
             </button>
         </div>
         <div class="right-column">
-            <button class="container navigation" >
-            Box
-            </button>
-            <button class="container navigation">
-            Box
-            </button>
-            <button class="container navigation">
-            Box
-            </button>
-            <button class="container navigation">
-            Box
-            </button>
-            <button class="container navigation">
-            Box
-            </button>
-            <button class="container navigation">
-            Box
-            </button>
-            <button class="container navigation">
-            Box
-            </button>
-            <button class="container navigation">
-            Box
-            </button>
-            <button class="container navigation">
-            Box
-            </button>
+            <a href="#" class="navigation" >
+            Calender
+            </a>
+            <a href="#" class="navigation">
+            Timetable
+            </a>
+            <a href="#" class="navigation">
+            About Us
+            </a>
+            <a href="#" class="navigation">
+            Logout
+            </a>
+            <a href="#" class="navigation">
+            Sun image
+            </a>
         </div>
     </div>
     <div class="container" id="content">
-        <div class="wrapper">
+        <div class="wrapper side-panel-open">
             <div class="side-nav-bar">
-                side nav bar
-                <div class="side-button">
+                <button class="side-button" id="background">
                     Button 1
-                </div>
-                <div class="button">
+                </button>
+                <button class="side-button">
                     Button 2
-                </div>
-                <div class="button">
+                </button>
+                <button class="side-button" id="">
                     Button 3
-                </div>
-                <div class="button">
-                    Button 3
-                </div>
+                </button>
+                <button class="side-button" id="">
+                    Button 4
+                </button>
             </div>
-            <div class="main-content-area">
-                main content area
+            <div class="side-content-area">
+                side content area
             </div>
+            <button class="side-panel-toggle" type="button">
+                <span class="material-icons sp-icon-open">arrow_back_ios</span>
+            </button>
         </div>
+        <script>
+            document.querySelector('.side-panel-toggle').addEventListener('click', () => {
+                document.querySelector(".wrapper").classList.toggle('side-panel-open');
+            });
+        </script>
+        <script>
+            document.querySelector('#background').addEventListener('click', () => {
+                document.querySelector(".wrapper").classList.toggle('side-panel-open');
+            });
+        </script>       
     </div>
 </body>
 </html>
