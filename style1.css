@@ -133,10 +133,16 @@ button {
   flex: 70%;
   width: 100%;
   z-index: 10;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  overflow: auto;
+  max-height: 85vh;
 } 
 
 .side {
   width: 25%;
+  max-height: 80vh;
+  margin-bottom: 20vh;
 }
 
 .about {
@@ -145,10 +151,11 @@ button {
   margin: 100px 10px 30px 30px;
   border-radius: 20px;
   z-index: 10;
-  padding-top: 48px;
   padding-left: 48px;
   padding-right: 48px;
-  padding-bottom: 18px;
+  padding-top: 48px;
+  padding-bottom: 56px;
+  height: 36vh;
 } 
 
 #personal_about1 {
@@ -161,7 +168,6 @@ button {
   padding-top: 48px;
   padding-left: 48px;
   padding-right: 48px;
-  height: auto;
 } 
 
 #personal_about2 {
@@ -174,7 +180,6 @@ button {
   padding-top: 48px;
   padding-left: 48px;
   padding-right: 48px;
-  height: auto;
 } 
 
 #personal_about3 {
@@ -182,18 +187,18 @@ button {
   display: none;
   box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
   margin: 100px 10px 30px 30px;
-  border: solid white 1px;  
   border-radius: 20px;
   z-index: 10;
-  height: auto;
+  padding-bottom: 32px;
 } 
 
 #personal_about3 img {
-  display: block;
+  display: flex;
+  padding-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  border-radius: 10px;
+  align-items: center;
+  width: 200px;
 }
 
 #personal_about4 {
@@ -206,12 +211,11 @@ button {
   padding-top: 48px;
   padding-left: 48px;
   padding-right: 48px;
-  height: auto;
 } 
 
 .members {
   box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
-  margin: 30px 10px 30px 30px; 
+  margin: 32px 10px 0px 30px; 
   border-radius: 20px;
   z-index: 10;
   padding-top: 20px;
@@ -244,7 +248,6 @@ button {
 .start_desc {
   margin-left: 48px;
   font-size: 22px;
-  margin-bottom: 32px;
 }
 
 .list {
